@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="meteo@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="meteo">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="article"/>
+    <schema id="4" parent="1" name="bookmanager"/>
+    <schema id="5" parent="1" name="books_db"/>
+    <schema id="6" parent="1" name="eshopdatabase"/>
+    <schema id="7" parent="1" name="first"/>
+    <schema id="8" parent="1" name="hibernate"/>
+    <schema id="9" parent="1" name="home"/>
+    <schema id="10" parent="1" name="information_schema"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="neuralnetworkdatabase"/>
+    <schema id="13" parent="1" name="performance_schema"/>
+    <schema id="14" parent="1" name="sakila"/>
+    <schema id="15" parent="1" name="spring_security_app"/>
+    <schema id="16" parent="1" name="students"/>
+    <schema id="17" parent="1" name="sys"/>
+    <table id="18" parent="2" name="data"/>
+    <column id="19" parent="18" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="18" name="TEMPERATURE">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="21" parent="18" name="HUMIDITY">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="22" parent="18" name="PRESSURE">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="23" parent="18" name="MEASURE">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <index id="24" parent="18" name="DATA_ID_INDEX">
+      <ColNames>ID</ColNames>
+    </index>
+    <key id="25" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
